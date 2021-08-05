@@ -255,7 +255,7 @@ func placeholder() {
 
 The macOS sample packages all of the Audio Unit’s code into the `AUv3FilterFramework` target. You indicate that the extension’s code exists in a separate bundle by adding an `AudioComponentBundle` extension attribute to the target’s Info.plist file.
 
-```
+```xml
 <key>NSExtension</key>
 <dict>
     <key>NSExtensionAttributes</key>
@@ -279,7 +279,7 @@ public override init(nibName: NSNib.Name?, bundle: Bundle?) {
 
 Finally, in the extension’s Info.plist file, set the Audio Unit’s factory object, `AUv3FilterDemoViewController`, as the extension’s principal class.
 
-```
+```xml
 <key>NSExtension</key>
 <dict>
     <key>NSExtensionPrincipalClass</key>

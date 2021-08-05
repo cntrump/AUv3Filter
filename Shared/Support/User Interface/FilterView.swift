@@ -9,7 +9,7 @@ public let defaultMinHertz: Float = 12.0
 public let defaultMaxHertz: Float = 20_000.0
 
 /// Delegate protocol used to communicate changes to frequency and resonance.
-protocol FilterViewDelegate: class {
+protocol FilterViewDelegate: AnyObject {
     func filterViewTouchBegan(_ filterView: FilterView)
     func filterView(_ filterView: FilterView, didChangeResonance resonance: Float)
     func filterView(_ filterView: FilterView, didChangeFrequency frequency: Float)
